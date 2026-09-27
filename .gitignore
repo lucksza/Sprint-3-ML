@@ -1,0 +1,6 @@
+# Dados do desafio (não versionados pelo tamanho)
+dados/*.csv
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/

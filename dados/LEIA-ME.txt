@@ -1,0 +1,3 @@
+Coloque aqui os arquivos fornecidos no desafio:
+  - ford_clientes_historico_completo.csv  (base de modelagem)
+  - ford_clientes_operacional_compra.csv  (layout operacional, usado na simulação de deploy)

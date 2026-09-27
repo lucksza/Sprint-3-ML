@@ -1,0 +1,1169 @@
+{
+ "ablacao": [
+  {
+   "conjunto de variáveis": "A) Compra (D0) — escolhido",
+   "nº vars": 22,
+   "PR-AUC": 0.3058270533,
+   "ROC-AUC": 0.7414641238
+  },
+  {
+   "conjunto de variáveis": "B) Compra + 1ª revisão",
+   "nº vars": 29,
+   "PR-AUC": 0.4136422354,
+   "ROC-AUC": 0.7979194633
+  },
+  {
+   "conjunto de variáveis": "C) Compra + 1ª revisão + 24 meses",
+   "nº vars": 33,
+   "PR-AUC": 0.4577675423,
+   "ROC-AUC": 0.8414797005
+  },
+  {
+   "conjunto de variáveis": "D) Compra + perfil latente",
+   "nº vars": 23,
+   "PR-AUC": 0.3183519292,
+   "ROC-AUC": 0.7543497247
+  }
+ ],
+ "variaveis_criadas": [
+  {
+   "modelo": "Regressão Logística",
+   "PR-AUC 22 originais": 0.2723520422,
+   "PR-AUC 22 + 3 criadas": 0.2721864554,
+   "ganho médio": -0.0001655868,
+   "dp do ganho entre folds": 0.000352468,
+   "folds em que as criadas venceram (de 5)": 3
+  },
+  {
+   "modelo": "XGBoost",
+   "PR-AUC 22 originais": 0.3045650724,
+   "PR-AUC 22 + 3 criadas": 0.3045362408,
+   "ganho médio": -2.88315e-05,
+   "dp do ganho entre folds": 0.000621068,
+   "folds em que as criadas venceram (de 5)": 3
+  }
+ ],
+ "cv": [
+  {
+   "modelo": "XGBoost ajustado",
+   "PR-AUC (média)": 0.3047428745,
+   "PR-AUC (dp)": 0.0028498673,
+   "ROC-AUC (média)": 0.7403300789,
+   "ROC-AUC (dp)": 0.0015672614,
+   "Brier (média)": 0.1103944615,
+   "PR-AUC treino": 0.3165971365,
+   "gap treino−validação (PR-AUC)": 0.0118542621,
+   "tempo de treino por fold (s)": 3.3318286896
+  },
+  {
+   "modelo": "XGBoost",
+   "PR-AUC (média)": 0.3045650724,
+   "PR-AUC (dp)": 0.0024495075,
+   "ROC-AUC (média)": 0.7400954776,
+   "ROC-AUC (dp)": 0.0015024188,
+   "Brier (média)": 0.1104443699,
+   "PR-AUC treino": 0.3579016186,
+   "gap treino−validação (PR-AUC)": 0.0533365463,
+   "tempo de treino por fold (s)": 4.3254994392
+  },
+  {
+   "modelo": "Random Forest",
+   "PR-AUC (média)": 0.3041470022,
+   "PR-AUC (dp)": 0.002893167,
+   "ROC-AUC (média)": 0.7404126534,
+   "ROC-AUC (dp)": 0.0016202517,
+   "Brier (média)": 0.1105380191,
+   "PR-AUC treino": 0.3862671978,
+   "gap treino−validação (PR-AUC)": 0.0821201956,
+   "tempo de treino por fold (s)": 15.7249489307
+  },
+  {
+   "modelo": "Árvore de Decisão",
+   "PR-AUC (média)": 0.2908348844,
+   "PR-AUC (dp)": 0.0020349249,
+   "ROC-AUC (média)": 0.7317970434,
+   "ROC-AUC (dp)": 0.0014869832,
+   "Brier (média)": 0.1111023237,
+   "PR-AUC treino": 0.3016305328,
+   "gap treino−validação (PR-AUC)": 0.0107956484,
+   "tempo de treino por fold (s)": 5.4765810966
+  },
+  {
+   "modelo": "Rede Neural (MLP)",
+   "PR-AUC (média)": 0.2845696566,
+   "PR-AUC (dp)": 0.0052787632,
+   "ROC-AUC (média)": 0.7291242855,
+   "ROC-AUC (dp)": 0.0054871697,
+   "Brier (média)": 0.1119471333,
+   "PR-AUC treino": 0.2914708023,
+   "gap treino−validação (PR-AUC)": 0.0069011457,
+   "tempo de treino por fold (s)": 9.9707771301
+  },
+  {
+   "modelo": "Regressão Logística",
+   "PR-AUC (média)": 0.2723520422,
+   "PR-AUC (dp)": 0.0030810629,
+   "ROC-AUC (média)": 0.7208706129,
+   "ROC-AUC (dp)": 0.0015291101,
+   "Brier (média)": 0.1128577342,
+   "PR-AUC treino": 0.2726778282,
+   "gap treino−validação (PR-AUC)": 0.000325786,
+   "tempo de treino por fold (s)": 4.0732764244
+  },
+  {
+   "modelo": "Dummy (prevalência)",
+   "PR-AUC (média)": 0.1419225,
+   "PR-AUC (dp)": 5e-06,
+   "ROC-AUC (média)": 0.5,
+   "ROC-AUC (dp)": 0.0,
+   "Brier (média)": 0.121780504,
+   "PR-AUC treino": 0.1419225,
+   "gap treino−validação (PR-AUC)": 2.775557562e-17,
+   "tempo de treino por fold (s)": 2.4860915661
+  }
+ ],
+ "teste": [
+  {
+   "modelo": "Random Forest",
+   "PR-AUC": 0.3016639333,
+   "ROC-AUC": 0.7384240771,
+   "Brier": 0.1107177878,
+   "Log loss": 0.3626650188,
+   "Precision@20%": 0.3118,
+   "Recall@20%": 0.4394024803,
+   "Lift@20%": 2.1970124014
+  },
+  {
+   "modelo": "XGBoost",
+   "PR-AUC": 0.3014238734,
+   "ROC-AUC": 0.7381489346,
+   "Brier": 0.1106778309,
+   "Log loss": 0.3624619547,
+   "Precision@20%": 0.31135,
+   "Recall@20%": 0.4387683202,
+   "Lift@20%": 2.1938416009
+  },
+  {
+   "modelo": "XGBoost ajustado",
+   "PR-AUC": 0.3006928609,
+   "ROC-AUC": 0.7377074551,
+   "Brier": 0.1106758788,
+   "Log loss": 0.36250904,
+   "Precision@20%": 0.3104,
+   "Recall@20%": 0.4374295378,
+   "Lift@20%": 2.1871476888
+  },
+  {
+   "modelo": "Rede Neural (MLP)",
+   "PR-AUC": 0.2883097401,
+   "ROC-AUC": 0.7304483909,
+   "Brier": 0.1118015576,
+   "Log loss": 0.3661891094,
+   "Precision@20%": 0.29685,
+   "Recall@20%": 0.4183342728,
+   "Lift@20%": 2.0916713641
+  },
+  {
+   "modelo": "Árvore de Decisão",
+   "PR-AUC": 0.2865494938,
+   "ROC-AUC": 0.7279046787,
+   "Brier": 0.1115487266,
+   "Log loss": 0.3662576621,
+   "Precision@20%": 0.30355,
+   "Recall@20%": 0.427776212,
+   "Lift@20%": 2.1388810598
+  },
+  {
+   "modelo": "Regressão Logística",
+   "PR-AUC": 0.2676313347,
+   "ROC-AUC": 0.7169055422,
+   "Brier": 0.1132338501,
+   "Log loss": 0.3714864757,
+   "Precision@20%": 0.28115,
+   "Recall@20%": 0.3962091319,
+   "Lift@20%": 1.9810456595
+  },
+  {
+   "modelo": "Dummy (prevalência)",
+   "PR-AUC": 0.14192,
+   "ROC-AUC": 0.5,
+   "Brier": 0.1217787136,
+   "Log loss": 0.408433591,
+   "Precision@20%": 0.1413,
+   "Recall@20%": 0.1991262683,
+   "Lift@20%": 0.9956313416
+  }
+ ],
+ "pesos_classe": [
+  {
+   "index": "Regressão Logística — sem peso",
+   "PR-AUC treino": 0.2725538899,
+   "PR-AUC validação": 0.2726547789,
+   "ROC-AUC validação": 0.7215319647,
+   "Brier validação": 0.1128175093
+  },
+  {
+   "index": "Regressão Logística — class_weight='balanced'",
+   "PR-AUC treino": 0.2680774756,
+   "PR-AUC validação": 0.2678046918,
+   "ROC-AUC validação": 0.7200913496,
+   "Brier validação": 0.2179529076
+  },
+  {
+   "index": "XGBoost — sem peso",
+   "PR-AUC treino": 0.3586168637,
+   "PR-AUC validação": 0.3045854118,
+   "ROC-AUC validação": 0.7413254888,
+   "Brier validação": 0.1103534177
+  },
+  {
+   "index": "XGBoost — scale_pos_weight=6.0",
+   "PR-AUC treino": 0.3420856185,
+   "PR-AUC validação": 0.3054185617,
+   "ROC-AUC validação": 0.7410586634,
+   "Brier validação": 0.2069075257
+  }
+ ],
+ "arvore_profundidade": [
+  {
+   "max_depth": "2",
+   "PR-AUC treino": 0.2376206618,
+   "PR-AUC validação": 0.2369312487,
+   "ROC-AUC validação": 0.6792499274,
+   "Brier validação": 0.1138980081
+  },
+  {
+   "max_depth": "4",
+   "PR-AUC treino": 0.2682290016,
+   "PR-AUC validação": 0.2643920914,
+   "ROC-AUC validação": 0.715410117,
+   "Brier validação": 0.112013799
+  },
+  {
+   "max_depth": "6",
+   "PR-AUC treino": 0.2886402569,
+   "PR-AUC validação": 0.2813231042,
+   "ROC-AUC validação": 0.728977763,
+   "Brier validação": 0.1113238476
+  },
+  {
+   "max_depth": "8",
+   "PR-AUC treino": 0.3092570961,
+   "PR-AUC validação": 0.2865312791,
+   "ROC-AUC validação": 0.7300118811,
+   "Brier validação": 0.1116147599
+  },
+  {
+   "max_depth": "10",
+   "PR-AUC treino": 0.3382374048,
+   "PR-AUC validação": 0.2797682511,
+   "ROC-AUC validação": 0.7242538903,
+   "Brier validação": 0.1131094071
+  },
+  {
+   "max_depth": "12",
+   "PR-AUC treino": 0.3876935816,
+   "PR-AUC validação": 0.2695710873,
+   "ROC-AUC validação": 0.7156351504,
+   "Brier validação": 0.1165373368
+  },
+  {
+   "max_depth": "16",
+   "PR-AUC treino": 0.540729264,
+   "PR-AUC validação": 0.2381950803,
+   "ROC-AUC validação": 0.6720694481,
+   "Brier validação": 0.1321804218
+  },
+  {
+   "max_depth": "20",
+   "PR-AUC treino": 0.7126712742,
+   "PR-AUC validação": 0.2126471092,
+   "ROC-AUC validação": 0.6243338247,
+   "Brier validação": 0.1558228956
+  },
+  {
+   "max_depth": "None",
+   "PR-AUC treino": 1.0,
+   "PR-AUC validação": 0.1583758487,
+   "ROC-AUC validação": 0.5454853605,
+   "Brier validação": 0.23505
+  }
+ ],
+ "mlp_arquiteturas": [
+  {
+   "arquitetura MLP": "1 camada (32)",
+   "PR-AUC treino": 0.2850587095,
+   "PR-AUC validação": 0.2855982439,
+   "ROC-AUC validação": 0.7302825453,
+   "Brier validação": 0.1118544262
+  },
+  {
+   "arquitetura MLP": "2 camadas (64, 32)",
+   "PR-AUC treino": 0.2957672751,
+   "PR-AUC validação": 0.2938730761,
+   "ROC-AUC validação": 0.7359950701,
+   "Brier validação": 0.1112492037
+  },
+  {
+   "arquitetura MLP": "3 camadas (128, 64, 32)",
+   "PR-AUC treino": 0.2876797781,
+   "PR-AUC validação": 0.2854213058,
+   "ROC-AUC validação": 0.7326161216,
+   "Brier validação": 0.1116768736
+  }
+ ],
+ "busca_top10": [
+  {
+   "index": 16,
+   "colsample_bytree": 0.6462297538,
+   "gamma": 1.5111022771,
+   "learning_rate": 0.0198460132,
+   "max_depth": 5,
+   "min_child_weight": 51,
+   "n_estimators": 285,
+   "reg_lambda": 10.6165377365,
+   "subsample": 0.8497416193,
+   "mean_test_score": 0.3012172139,
+   "std_test_score": 0.0009880673,
+   "mean_train_score": 0.329023561
+  },
+  {
+   "index": 1,
+   "colsample_bytree": 0.6755493352,
+   "gamma": 0.6674172223,
+   "learning_rate": 0.0153417187,
+   "max_depth": 5,
+   "min_child_weight": 22,
+   "n_estimators": 508,
+   "reg_lambda": 17.052641539,
+   "subsample": 0.9329770563,
+   "mean_test_score": 0.30113629,
+   "std_test_score": 0.0010597331,
+   "mean_train_score": 0.3413187721
+  },
+  {
+   "index": 2,
+   "colsample_bytree": 0.5274034664,
+   "gamma": 0.3636499344,
+   "learning_rate": 0.0173226675,
+   "max_depth": 6,
+   "min_child_weight": 58,
+   "n_estimators": 221,
+   "reg_lambda": 0.1038149216,
+   "subsample": 0.60922497,
+   "mean_test_score": 0.3008872409,
+   "std_test_score": 0.0009750766,
+   "mean_train_score": 0.3315585564
+  },
+  {
+   "index": 19,
+   "colsample_bytree": 0.6115413138,
+   "gamma": 0.6095625163,
+   "learning_rate": 0.016376542,
+   "max_depth": 5,
+   "min_child_weight": 9,
+   "n_estimators": 517,
+   "reg_lambda": 0.324396929,
+   "subsample": 0.6479461469,
+   "mean_test_score": 0.3004993186,
+   "std_test_score": 0.0006836727,
+   "mean_train_score": 0.3573540354
+  },
+  {
+   "index": 14,
+   "colsample_bytree": 0.8330377127,
+   "gamma": 0.4719698395,
+   "learning_rate": 0.0215353815,
+   "max_depth": 5,
+   "min_child_weight": 9,
+   "n_estimators": 406,
+   "reg_lambda": 0.963351344,
+   "subsample": 0.6101676507,
+   "mean_test_score": 0.300445271,
+   "std_test_score": 0.0009343891,
+   "mean_train_score": 0.3619484035
+  },
+  {
+   "index": 25,
+   "colsample_bytree": 0.9150152829,
+   "gamma": 0.6519178104,
+   "learning_rate": 0.0193437294,
+   "max_depth": 4,
+   "min_child_weight": 3,
+   "n_estimators": 710,
+   "reg_lambda": 0.3320271309,
+   "subsample": 0.8580691162,
+   "mean_test_score": 0.3004407474,
+   "std_test_score": 0.0013783851,
+   "mean_train_score": 0.3563012973
+  },
+  {
+   "index": 18,
+   "colsample_bytree": 0.8844640931,
+   "gamma": 1.7921825998,
+   "learning_rate": 0.0259257936,
+   "max_depth": 3,
+   "min_child_weight": 1,
+   "n_estimators": 576,
+   "reg_lambda": 3.0928182208,
+   "subsample": 0.6002081508,
+   "mean_test_score": 0.3002533581,
+   "std_test_score": 0.0011163109,
+   "mean_train_score": 0.3263791841
+  },
+  {
+   "index": 24,
+   "colsample_bytree": 0.6821803807,
+   "gamma": 1.9668462818,
+   "learning_rate": 0.0330280218,
+   "max_depth": 3,
+   "min_child_weight": 9,
+   "n_estimators": 323,
+   "reg_lambda": 1.4770004548,
+   "subsample": 0.8783251227,
+   "mean_test_score": 0.3000521558,
+   "std_test_score": 0.0011742948,
+   "mean_train_score": 0.3189953635
+  },
+  {
+   "index": 22,
+   "colsample_bytree": 0.7016074139,
+   "gamma": 0.1029575025,
+   "learning_rate": 0.0230423839,
+   "max_depth": 3,
+   "min_child_weight": 1,
+   "n_estimators": 602,
+   "reg_lambda": 3.6840342764,
+   "subsample": 0.8123738333,
+   "mean_test_score": 0.2999835883,
+   "std_test_score": 0.0011023486,
+   "mean_train_score": 0.323569473
+  },
+  {
+   "index": 20,
+   "colsample_bytree": 0.6025691028,
+   "gamma": 1.8858194078,
+   "learning_rate": 0.0263327799,
+   "max_depth": 3,
+   "min_child_weight": 52,
+   "n_estimators": 312,
+   "reg_lambda": 0.1410324359,
+   "subsample": 0.7015661656,
+   "mean_test_score": 0.2997767713,
+   "std_test_score": 0.0003139139,
+   "mean_train_score": 0.3129709587
+  }
+ ],
+ "estabilidade": [
+  {
+   "index": "treino (ajuste)",
+   "PR-AUC": 0.3150441626,
+   "ROC-AUC": 0.7462100503
+  },
+  {
+   "index": "validação cruzada 5-fold",
+   "PR-AUC": 0.3047428745,
+   "ROC-AUC": 0.7403300789
+  },
+  {
+   "index": "teste",
+   "PR-AUC": 0.3006928609,
+   "ROC-AUC": 0.7377074551
+  }
+ ],
+ "ic_bootstrap": [
+  {
+   "index": "PR-AUC (XGBoost ajustado)",
+   "IC 2,5%": 0.2944811105,
+   "mediana": 0.301028609,
+   "IC 97,5%": 0.3074137094
+  },
+  {
+   "index": "ROC-AUC (XGBoost ajustado)",
+   "IC 2,5%": 0.7336064103,
+   "mediana": 0.7377735797,
+   "IC 97,5%": 0.7416342613
+  },
+  {
+   "index": "Diferença de PR-AUC: XGBoost ajustado − Random Forest",
+   "IC 2,5%": -0.0022864201,
+   "mediana": -0.0009804032,
+   "IC 97,5%": 0.0005467329
+  },
+  {
+   "index": "Diferença de PR-AUC: XGBoost ajustado − XGBoost",
+   "IC 2,5%": -0.0023415361,
+   "mediana": -0.0006573006,
+   "IC 97,5%": 0.0010475281
+  }
+ ],
+ "faixas_risco": [
+  {
+   "faixa": "1. Alto",
+   "clientes": 10084,
+   "churners": 3572,
+   "taxa_churn": 35.4224514082,
+   "% dos clientes": 10.084,
+   "% dos churners": 25.1691093574,
+   "lift vs média": 2.4959449978
+  },
+  {
+   "faixa": "2. Médio",
+   "clientes": 20000,
+   "churners": 4511,
+   "taxa_churn": 22.555,
+   "% dos clientes": 20.0,
+   "% dos churners": 31.7855129651,
+   "lift vs média": 1.5892756483
+  },
+  {
+   "faixa": "3. Baixo",
+   "clientes": 69916,
+   "churners": 6109,
+   "taxa_churn": 8.7376280108,
+   "% dos clientes": 69.916,
+   "% dos churners": 43.0453776776,
+   "lift vs média": 0.6156727742
+  }
+ ],
+ "segmentos": [
+  {
+   "variável": "regiao",
+   "segmento": "capital",
+   "clientes": 33014,
+   "% churn": 11.3073241655,
+   "ROC-AUC": 0.762121005,
+   "PR-AUC": 0.2835445164
+  },
+  {
+   "variável": "regiao",
+   "segmento": "interior",
+   "clientes": 32516,
+   "% churn": 17.2961003814,
+   "ROC-AUC": 0.7031045194,
+   "PR-AUC": 0.3121058647
+  },
+  {
+   "variável": "regiao",
+   "segmento": "metropolitana",
+   "clientes": 34470,
+   "% churn": 14.0266898753,
+   "ROC-AUC": 0.7351977324,
+   "PR-AUC": 0.2999137573
+  },
+  {
+   "variável": "categoria_veiculo",
+   "segmento": "hatch",
+   "clientes": 26218,
+   "% churn": 13.9217331604,
+   "ROC-AUC": 0.7010971712,
+   "PR-AUC": 0.2642177185
+  },
+  {
+   "variável": "categoria_veiculo",
+   "segmento": "picape",
+   "clientes": 24027,
+   "% churn": 15.2869688267,
+   "ROC-AUC": 0.7604999727,
+   "PR-AUC": 0.3366877093
+  },
+  {
+   "variável": "categoria_veiculo",
+   "segmento": "sedan",
+   "clientes": 20145,
+   "% churn": 13.2092330603,
+   "ROC-AUC": 0.7308730585,
+   "PR-AUC": 0.2711905548
+  },
+  {
+   "variável": "categoria_veiculo",
+   "segmento": "suv",
+   "clientes": 22826,
+   "% churn": 13.1166213967,
+   "ROC-AUC": 0.7475744231,
+   "PR-AUC": 0.2920530601
+  },
+  {
+   "variável": "categoria_veiculo",
+   "segmento": "van",
+   "clientes": 6784,
+   "% churn": 17.8950471698,
+   "ROC-AUC": 0.7312570431,
+   "PR-AUC": 0.3548719394
+  },
+  {
+   "variável": "canal_compra",
+   "segmento": "frota",
+   "clientes": 9605,
+   "% churn": 13.9198334201,
+   "ROC-AUC": 0.7189810297,
+   "PR-AUC": 0.296280426
+  },
+  {
+   "variável": "canal_compra",
+   "segmento": "loja",
+   "clientes": 61516,
+   "% churn": 13.6306001691,
+   "ROC-AUC": 0.7451327687,
+   "PR-AUC": 0.2970897413
+  },
+  {
+   "variável": "canal_compra",
+   "segmento": "online",
+   "clientes": 19769,
+   "% churn": 15.0639890738,
+   "ROC-AUC": 0.7320998181,
+   "PR-AUC": 0.304789723
+  },
+  {
+   "variável": "canal_compra",
+   "segmento": "telefone",
+   "clientes": 9110,
+   "% churn": 16.3776070252,
+   "ROC-AUC": 0.712771607,
+   "PR-AUC": 0.3182335919
+  }
+ ],
+ "sanidade_perfil_latente": [
+  {
+   "perfil_latente": "abandono",
+   "clientes": 24060,
+   "churn_real": 27.497921862,
+   "score_medio": 23.4632110596,
+   "pct_em_alto_risco": 29.0565261841
+  },
+  {
+   "perfil_latente": "esquecido",
+   "clientes": 20047,
+   "churn_real": 20.8510001496,
+   "score_medio": 20.8572483063,
+   "pct_em_alto_risco": 13.6030330658
+  },
+  {
+   "perfil_latente": "economico",
+   "clientes": 25858,
+   "churn_real": 10.3372263903,
+   "score_medio": 12.5747756958,
+   "pct_em_alto_risco": 1.4038208723
+  },
+  {
+   "perfil_latente": "fiel",
+   "clientes": 30035,
+   "churn_real": 2.4071916098,
+   "score_medio": 3.7410225868,
+   "pct_em_alto_risco": 0.0099883461
+  }
+ ],
+ "importancia_shap": {
+  "organizacao_proxy": 0.3344550132751465,
+  "distancia_concessionaria_km": 0.28390902280807495,
+  "plano_manutencao": 0.19830496609210968,
+  "prestacao_renda_ratio": 0.11556096374988556,
+  "sensibilidade_preco_inicial": 0.10910630226135254,
+  "tempo_decisao_dias": 0.09364553540945053,
+  "score_credito": 0.06462051719427109,
+  "teve_ford_antes": 0.051339197903871536,
+  "prazo_financiamento_meses": 0.04384066164493561,
+  "idade": 0.038946110755205154,
+  "entrada_pct": 0.038234643638134,
+  "regiao": 0.031112737953662872,
+  "garantia_estendida": 0.027583545073866844,
+  "km_estimado_mes": 0.023591691628098488,
+  "renda_mensal": 0.020942825824022293,
+  "aceitou_marketing": 0.020083395764231682,
+  "valor_veiculo": 0.010499517433345318,
+  "usou_troca": 0.009438464418053627,
+  "uso_principal": 0.007621724158525467,
+  "modelo_veiculo": 0.0024168984964489937,
+  "canal_compra": 0.0018238014308735728,
+  "compra_a_vista": 0.0002644165651872754
+ },
+ "melhores_params": {
+  "colsample_bytree": 0.6462297538213778,
+  "gamma": 1.5111022770860973,
+  "learning_rate": 0.01984601321734508,
+  "max_depth": 5,
+  "min_child_weight": 51,
+  "n_estimators": 285,
+  "reg_lambda": 10.616537736499161,
+  "subsample": 0.8497416192535173
+ },
+ "cortes": {
+  "alto": 0.3037375509738922,
+  "medio": 0.17987480759620667,
+  "limiar_f1": 0.17901237308979034
+ },
+ "custo": [
+  {
+   "modelo": "Dummy (prevalência)",
+   "tamanho do modelo salvo (MB)": 0.008146,
+   "tempo p/ pontuar 100 mil clientes (s)": 0.1313148,
+   "tempo de treino por fold na CV (s)": 2.4860915661
+  },
+  {
+   "modelo": "Regressão Logística",
+   "tamanho do modelo salvo (MB)": 0.008762,
+   "tempo p/ pontuar 100 mil clientes (s)": 0.1332134,
+   "tempo de treino por fold na CV (s)": 4.0732764244
+  },
+  {
+   "modelo": "Árvore de Decisão",
+   "tamanho do modelo salvo (MB)": 0.034564,
+   "tempo p/ pontuar 100 mil clientes (s)": 0.143281,
+   "tempo de treino por fold na CV (s)": 5.4765810966
+  },
+  {
+   "modelo": "Random Forest",
+   "tamanho do modelo salvo (MB)": 55.145547,
+   "tempo p/ pontuar 100 mil clientes (s)": 0.351359,
+   "tempo de treino por fold na CV (s)": 15.7249489307
+  },
+  {
+   "modelo": "XGBoost",
+   "tamanho do modelo salvo (MB)": 1.119723,
+   "tempo p/ pontuar 100 mil clientes (s)": 0.2006131,
+   "tempo de treino por fold na CV (s)": 4.3254994392
+  },
+  {
+   "modelo": "Rede Neural (MLP)",
+   "tamanho do modelo salvo (MB)": 0.135514,
+   "tempo p/ pontuar 100 mil clientes (s)": 0.1888394,
+   "tempo de treino por fold na CV (s)": 9.9707771301
+  },
+  {
+   "modelo": "XGBoost ajustado",
+   "tamanho do modelo salvo (MB)": 0.739045,
+   "tempo p/ pontuar 100 mil clientes (s)": 0.1840909,
+   "tempo de treino por fold na CV (s)": 3.3318286896
+  }
+ ],
+ "n_treino": 400000,
+ "n_teste": 100000,
+ "taxa_churn": 0.1419225,
+ "features": [
+  "renda_mensal",
+  "distancia_concessionaria_km",
+  "valor_veiculo",
+  "km_estimado_mes",
+  "idade",
+  "score_credito",
+  "entrada_pct",
+  "prazo_financiamento_meses",
+  "prestacao_renda_ratio",
+  "sensibilidade_preco_inicial",
+  "organizacao_proxy",
+  "tempo_decisao_dias",
+  "teve_ford_antes",
+  "usou_troca",
+  "compra_a_vista",
+  "garantia_estendida",
+  "plano_manutencao",
+  "aceitou_marketing",
+  "regiao",
+  "uso_principal",
+  "canal_compra",
+  "modelo_veiculo"
+ ],
+ "eda": {
+  "populacao": "treino",
+  "rho": {
+   "idade": -0.09295162190095956,
+   "renda_mensal": -0.08593228323161932,
+   "score_credito": -0.11037190462334225,
+   "distancia_concessionaria_km": 0.18944382819177413,
+   "km_estimado_mes": 0.06311433108591633,
+   "valor_veiculo": 0.0030758669758227633,
+   "entrada_pct": -0.07949169628538431,
+   "prazo_financiamento_meses": 0.06901736059875387,
+   "prestacao_renda_ratio": 0.0658780943733441,
+   "sensibilidade_preco_inicial": 0.06711927187143826,
+   "organizacao_proxy": -0.18301291642191123,
+   "tempo_decisao_dias": -0.08909752960271083,
+   "teve_ford_antes": -0.09933318785792512,
+   "usou_troca": -0.04670926061970062,
+   "compra_a_vista": -0.04528018585540789,
+   "garantia_estendida": -0.09362243719662562,
+   "plano_manutencao": -0.14035696735124042,
+   "aceitou_marketing": -0.03878408211509861
+  },
+  "rho_max_abs": 0.18944382819177413,
+  "rho_max_var": "distancia_concessionaria_km",
+  "dist_d1_km": 3.4,
+  "dist_d1": 7.203950717849505,
+  "dist_d10_km": 55.6,
+  "dist_d10": 34.1767640769779,
+  "org_d1": 21.5725,
+  "org_d10": 4.09,
+  "score_d1": 20.83609820836098,
+  "score_d10": 9.149609514573017,
+  "sens_d1": 7.2225,
+  "sens_max": 19.61,
+  "sens_argmax_decil": 6,
+  "km_d10": 20.225,
+  "prest_ate30": 13.278771767376565,
+  "prest_acima30": 19.72506202284358,
+  "binarias": {
+   "teve_ford_antes": {
+    "nao": 16.74277787735445,
+    "sim": 9.492794977885575
+   },
+   "usou_troca": {
+    "nao": 15.413011581806263,
+    "sim": 12.015778928034731
+   },
+   "compra_a_vista": {
+    "nao": 15.409061764483331,
+    "sim": 12.140281126385988
+   },
+   "garantia_estendida": {
+    "nao": 16.367157411309897,
+    "sim": 9.289956781398844
+   },
+   "plano_manutencao": {
+    "nao": 16.462240212293715,
+    "sim": 3.640360207048146
+   },
+   "aceitou_marketing": {
+    "nao": 15.570766606017184,
+    "sim": 12.863501997930275
+   }
+  },
+  "regiao": {
+   "capital": 11.525839618239022,
+   "interior": 17.189832107587254,
+   "metropolitana": 13.950215115393267
+  },
+  "canal": {
+   "frota": 13.875936501283595,
+   "loja": 13.63399353109393,
+   "online": 14.969834087481146,
+   "telefone": 16.56426707264028
+  },
+  "uso": {
+   "app": 16.83579335793358,
+   "familia": 12.27589446488687,
+   "lazer": 14.727117807973453,
+   "misto": 13.245954342416422,
+   "trabalho": 15.880336684101845
+  },
+  "categoria": {
+   "hatch": 13.846741101250117,
+   "picape": 15.357448853781372,
+   "sedan": 13.543779317896204,
+   "suv": 13.131324074274694,
+   "van": 16.97789705169779
+  },
+  "modelo": {
+   "EcoSport": 13.264511102454227,
+   "Edge": 13.01907604464054,
+   "F-150": 15.470823941898324,
+   "Fiesta": 13.655377915305714,
+   "Fiesta Sedan": 13.332836210432125,
+   "Focus Hatch": 14.101057579318448,
+   "Fusion": 13.7638031068688,
+   "Ka": 13.784038631882733,
+   "Ka Sedan": 13.535571870458018,
+   "Maverick": 15.046143185612145,
+   "Ranger": 15.553056570768126,
+   "Territory": 13.110372253732317,
+   "Transit": 17.00781540751768,
+   "Transit Minibus": 16.94788711363297
+  },
+  "corr_vista_entrada": 0.8597516552653716,
+  "corr_entrada_prazo": -0.8131455594159439
+ },
+ "ausentes": [
+  {
+   "variável (treino)": "renda_mensal",
+   "ausentes": 9852,
+   "% ausentes": 2.463,
+   "churn % com o campo ausente": 14.3016646366,
+   "churn % com o campo presente": 14.1894870664,
+   "p-valor qui² (ausência × churn)": 0.7637994903,
+   "usada no modelo?": "sim"
+  },
+  {
+   "variável (treino)": "score_credito",
+   "ausentes": 8186,
+   "% ausentes": 2.0465,
+   "churn % com o campo ausente": 14.2682628879,
+   "churn % com o campo presente": 14.1906618957,
+   "p-valor qui² (ausência × churn)": 0.8547009395,
+   "usada no modelo?": "sim"
+  },
+  {
+   "variável (treino)": "distancia_concessionaria_km",
+   "ausentes": 7168,
+   "% ausentes": 1.792,
+   "churn % com o campo ausente": 14.5089285714,
+   "churn % com o campo presente": 14.1864715705,
+   "p-valor qui² (ausência × churn)": 0.4483328403,
+   "usada no modelo?": "sim"
+  },
+  {
+   "variável (treino)": "satisfacao_marca_24m",
+   "ausentes": 6047,
+   "% ausentes": 1.51175,
+   "churn % com o campo ausente": 13.8746485861,
+   "churn % com o campo presente": 14.1971250378,
+   "p-valor qui² (ausência × churn)": 0.4873259077,
+   "usada no modelo?": "não (pós-venda)"
+  },
+  {
+   "variável (treino)": "tempo_decisao_dias",
+   "ausentes": 4833,
+   "% ausentes": 1.20825,
+   "churn % com o campo ausente": 14.0699358576,
+   "churn % com o campo presente": 14.1937459353,
+   "p-valor qui² (ausência × churn)": 0.8224329745,
+   "usada no modelo?": "sim"
+  },
+  {
+   "variável (treino)": "aceitou_marketing",
+   "ausentes": 4030,
+   "% ausentes": 1.0075,
+   "churn % com o campo ausente": 14.4168734491,
+   "churn % com o campo presente": 14.1899638862,
+   "p-valor qui² (ausência × churn)": 0.6980094763,
+   "usada no modelo?": "sim"
+  },
+  {
+   "variável (treino)": "share_revisoes_rede_24m",
+   "ausentes": 3994,
+   "% ausentes": 0.9985,
+   "churn % com o campo ausente": 14.221331998,
+   "churn % com o campo presente": 14.1919566875,
+   "p-valor qui² (ausência × churn)": 0.9759500982,
+   "usada no modelo?": "não (pós-venda)"
+  },
+  {
+   "variável (treino)": "idade",
+   "ausentes": 3882,
+   "% ausentes": 0.9705,
+   "churn % com o campo ausente": 14.7604327666,
+   "churn % com o campo presente": 14.1866817463,
+   "p-valor qui² (ausência × churn)": 0.3191084955,
+   "usada no modelo?": "sim"
+  },
+  {
+   "variável (treino)": "teve_ford_antes",
+   "ausentes": 3178,
+   "% ausentes": 0.7945,
+   "churn % com o campo ausente": 15.5129011957,
+   "churn % com o campo presente": 14.1816733951,
+   "p-valor qui² (ausência × churn)": 0.0343084555,
+   "usada no modelo?": "sim"
+  },
+  {
+   "variável (treino)": "gasto_manutencao_rede_24m",
+   "ausentes": 3177,
+   "% ausentes": 0.79425,
+   "churn % com o campo ausente": 13.3144475921,
+   "churn % com o campo presente": 14.1992777636,
+   "p-valor qui² (ausência × churn)": 0.1621287412,
+   "usada no modelo?": "não (pós-venda)"
+  },
+  {
+   "variável (treino)": "plano_manutencao",
+   "ausentes": 2391,
+   "% ausentes": 0.59775,
+   "churn % com o campo ausente": 14.8473442074,
+   "churn % com o campo presente": 14.1883106268,
+   "p-valor qui² (ausência × churn)": 0.3727758288,
+   "usada no modelo?": "sim"
+  },
+  {
+   "variável (treino)": "garantia_estendida",
+   "ausentes": 2371,
+   "% ausentes": 0.59275,
+   "churn % com o campo ausente": 14.8038802193,
+   "churn % com o campo presente": 14.188602944,
+   "p-valor qui² (ausência × churn)": 0.40854658,
+   "usada no modelo?": "sim"
+  }
+ ],
+ "inconsistencias": [
+  {
+   "index": 0,
+   "checagem": "Financiado (compra_a_vista=0) com prazo = 0 e prestação = 0",
+   "registros no treino": 267,
+   "tratamento": "prazo e prestação → ausentes → imputados (2.2)"
+  },
+  {
+   "index": 1,
+   "checagem": "À vista com entrada < 100 % ou prazo > 0",
+   "registros no treino": 0,
+   "tratamento": "nenhum caso"
+  },
+  {
+   "index": 2,
+   "checagem": "Prestação maior que a renda (prestacao_renda_ratio > 1)",
+   "registros no treino": 4250,
+   "tratamento": "winsorização (2.6)"
+  },
+  {
+   "index": 3,
+   "checagem": "prestacao_renda_ratio travado no teto de 2,5",
+   "registros no treino": 368,
+   "tratamento": "winsorização (2.6)"
+  },
+  {
+   "index": 4,
+   "checagem": "valor_veiculo exatamente no piso de R$ 55.000",
+   "registros no treino": 13267,
+   "tratamento": "mantido (valor plausível; piso da geração)"
+  },
+  {
+   "index": 5,
+   "checagem": "valor_veiculo > 2× a mediana do próprio modelo",
+   "registros no treino": 403,
+   "tratamento": "winsorização (2.6)"
+  },
+  {
+   "index": 6,
+   "checagem": "modelo_veiculo associado a mais de uma categoria",
+   "registros no treino": 0,
+   "tratamento": "nenhum caso → categoria é redundante (2.5)"
+  },
+  {
+   "index": 7,
+   "checagem": "idade fora de 18–100, score fora de 0–1000 ou valores negativos",
+   "registros no treino": 0,
+   "tratamento": "nenhum caso"
+  },
+  {
+   "index": 8,
+   "checagem": "[pós-venda] qtde_revisoes_24m = 0 mas share_revisoes_rede_24m > 0",
+   "registros no treino": 30075,
+   "tratamento": "coluna excluída do modelo (vazamento)"
+  }
+ ],
+ "outliers": [
+  {
+   "variável (treino)": "renda_mensal",
+   "outliers (IQR 1,5)": 14000,
+   "% outliers": 3.5883818448,
+   "mín": 1800.0,
+   "p0,5": 2764.9747,
+   "mediana": 10186.995,
+   "p99,5": 37209.1552500001,
+   "máx": 179228.13
+  },
+  {
+   "variável (treino)": "distancia_concessionaria_km",
+   "outliers (IQR 1,5)": 18977,
+   "% outliers": 4.8308182633,
+   "mín": 0.5,
+   "p0,5": 1.1,
+   "mediana": 16.1,
+   "p99,5": 95.4,
+   "máx": 364.1
+  },
+  {
+   "variável (treino)": "km_estimado_mes",
+   "outliers (IQR 1,5)": 4719,
+   "% outliers": 1.17975,
+   "mín": 200.0,
+   "p0,5": 212.0,
+   "mediana": 1611.0,
+   "p99,5": 3458.0,
+   "máx": 11724.0
+  },
+  {
+   "variável (treino)": "valor_veiculo",
+   "outliers (IQR 1,5)": 260,
+   "% outliers": 0.065,
+   "mín": 55000.0,
+   "p0,5": 55000.0,
+   "mediana": 133196.975,
+   "p99,5": 296310.0756500001,
+   "máx": 678148.85
+  },
+  {
+   "variável (treino)": "prestacao_renda_ratio",
+   "outliers (IQR 1,5)": 14687,
+   "% outliers": 3.67175,
+   "mín": 0.0,
+   "p0,5": 0.0,
+   "mediana": 0.121,
+   "p99,5": 1.267,
+   "máx": 2.5
+  },
+  {
+   "variável (treino)": "idade",
+   "outliers (IQR 1,5)": 1118,
+   "% outliers": 0.2822391308,
+   "mín": 18.0,
+   "p0,5": 18.0,
+   "mediana": 42.0,
+   "p99,5": 70.0,
+   "máx": 85.0
+  },
+  {
+   "variável (treino)": "score_credito",
+   "outliers (IQR 1,5)": 2471,
+   "% outliers": 0.6306563829,
+   "mín": 335.0,
+   "p0,5": 501.0,
+   "mediana": 713.0,
+   "p99,5": 889.0,
+   "máx": 980.0
+  },
+  {
+   "variável (treino)": "tempo_decisao_dias",
+   "outliers (IQR 1,5)": 3473,
+   "% outliers": 0.8788689339,
+   "mín": 1.0,
+   "p0,5": 1.0,
+   "mediana": 16.0,
+   "p99,5": 45.0,
+   "máx": 70.0
+  }
+ ],
+ "prestacao_formula": {
+  "populacao": "treino (financiados com prazo > 0)",
+  "fator_mediano": 1.0180020423627645,
+  "correlacao": 0.9965863306984568
+ },
+ "estrutura": {
+  "populacao": "base completa (estrutura)",
+  "linhas_duplicadas": 0,
+  "duplicadas_ignorando_id": 0,
+  "cliente_id_unico": true
+ },
+ "validacao_deploy": {
+  "populacao": "teste (layout operacional cru)",
+  "clientes": 2353,
+  "financiados_prazo_0": 63,
+  "com_campos_ausentes": 532,
+  "maior_diferenca_absoluta": 1.1102230246251565e-16,
+  "tolerancia": 1e-12,
+  "ok": true
+ },
+ "populacao": {
+  "estrutura": "base completa (estrutura)",
+  "eda": "treino",
+  "ausentes": "treino",
+  "inconsistencias": "treino",
+  "outliers": "treino",
+  "prestacao_formula": "treino",
+  "taxa_churn": "treino",
+  "ablacao": "treino (holdout interno 80/20)",
+  "variaveis_criadas": "treino (CV 5-fold)",
+  "cv": "treino (CV 5-fold)",
+  "pesos_classe": "treino (holdout interno)",
+  "arvore_profundidade": "treino (holdout interno)",
+  "mlp_arquiteturas": "treino (holdout interno)",
+  "busca_top10": "treino (amostra de 150 mil, CV 3-fold)",
+  "cortes": "treino (predições out-of-fold)",
+  "teste": "teste",
+  "custo": "teste (tempo de predição)",
+  "estabilidade": "treino / CV / teste",
+  "ic_bootstrap": "teste",
+  "faixas_risco": "teste (cortes do treino)",
+  "segmentos": "teste",
+  "sanidade_perfil_latente": "teste",
+  "importancia_shap": "teste (amostra de 5 mil)",
+  "validacao_deploy": "teste (layout operacional cru)"
+ }
+}

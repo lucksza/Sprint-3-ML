@@ -26,7 +26,7 @@ Modelo de Machine Learning que, **no momento da venda**, estima a probabilidade 
 
 | Pedido no enunciado | Arquivo |
 |---|---|
-| Notebook ou código-fonte com as etapas desenvolvidas | `Ford_Desafio2_IA_ML.ipynb` (executado, com saídas) · `Ford_Desafio2_IA_ML.html` (mesma versão, abre no navegador) |
+| Notebook ou código-fonte com as etapas desenvolvidas | `Ford_Desafio2_IA_ML.ipynb` (executado, com saídas; também no Google Colab) |
 | Documentação resumida da solução | `Documentacao_Resumida_IA_ML.pdf` |
 | Comparação dos modelos e das métricas utilizadas | notebook, seções 3.3–3.5 e 4.1–4.4 · PDF, seção 4 |
 | Conclusão com o modelo selecionado e justificativa | notebook, seção 5 · PDF, seção 5 |
@@ -35,7 +35,6 @@ Modelo de Machine Learning que, **no momento da venda**, estima a probabilidade 
 
 ```
 ├── Ford_Desafio2_IA_ML.ipynb        notebook completo (compreensão → preparação → modelos → avaliação → conclusão)
-├── Ford_Desafio2_IA_ML.html         versão HTML do notebook executado
 ├── Documentacao_Resumida_IA_ML.pdf  documentação resumida
 ├── requirements.txt                 bibliotecas e versões usadas
 ├── figuras/                         gráficos gerados pelo notebook + tabelas de métricas + resumo_resultados.json
